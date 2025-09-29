@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import joblib
 from sklearn.linear_model import LinearRegression
 
 # Optional: train a simple model using dummy data
@@ -46,3 +45,4 @@ if st.button("Predict Premium"):
     input_data = np.array([[age, sex_val, bmi, children, smoker_val, region_val]])
     prediction = model.predict(input_data)
     st.success(f"Estimated Annual Premium: ${prediction[0]:,.2f}")
+
