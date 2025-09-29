@@ -110,7 +110,7 @@ def main():
     """, unsafe_allow_html=True)
     
     # Title and description
-    st.markdown('<p class="title-gradient";p style="font-size: 1.3rem>  Health Insurance Premium Predictor</p>', unsafe_allow_html=True)
+    st.markdown('<p class="title-gradient">  Health Insurance Premium Predictor</p>', unsafe_allow_html=True)
     #st.markdown('<p style="text-align: center; color: #555;">Estimate your annual health insurance premium charge.</p>', unsafe_allow_html=True)
     
     st.markdown("---")
@@ -184,6 +184,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
