@@ -4,13 +4,7 @@ import random
 # --- Prediction Logic (Simulated Model) ---
 
 def predict_charge(data):
-    """
-    Simulated linear regression model for predicting insurance charges.
     
-    This function uses the same core simulation logic as the original Flask app.
-    
-    Features used: age, sex, bmi, children, smoker, region.
-    """
     try:
         # Get inputs
         age = data.get('age')
@@ -79,7 +73,7 @@ def main():
     st.set_page_config(page_title="Insurance Premium Predictor", layout="centered")
 
     # Custom CSS for styling (mimics the original app's gradient style)
-    st.markdown("""
+    st.markdown(
         <style>
         .title-gradient {
             background: -webkit-linear-gradient(45deg, #1e3a8a, #3b82f6);
@@ -115,7 +109,7 @@ def main():
             color: #10b981; /* green-500 */
         }
         </style>
-    """, unsafe_allow_html=True)
+    , unsafe_allow_html=True)
     
     # Title and description
     st.markdown('<p class="title-gradient">Health Insurance Premium Predictor</p>', unsafe_allow_html=True)
@@ -192,3 +186,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
