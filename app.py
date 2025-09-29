@@ -74,42 +74,7 @@ def main():
 
     # Custom CSS for styling (mimics the original app's gradient style)
     st.markdown(
-        <style>
-        .title-gradient {
-            background: -webkit-linear-gradient(45deg, #1e3a8a, #3b82f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-        .stButton>button {
-            background-color: #3b82f6;
-            color: white;
-            font-weight: 600;
-            padding: 0.75rem 1rem;
-            border-radius: 0.75rem;
-            transition: all 0.3s;
-        }
-        .stButton>button:hover {
-            background-color: #2563eb;
-            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.5);
-        }
-        .result-box {
-            background-color: #e5f5e5;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            border: 1px solid #34d399;
-        }
-        .result-charge {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #10b981; /* green-500 */
-        }
-        </style>
-    , unsafe_allow_html=True)
+        , unsafe_allow_html=True)
     
     # Title and description
     st.markdown('<p class="title-gradient">Health Insurance Premium Predictor</p>', unsafe_allow_html=True)
@@ -186,4 +151,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
