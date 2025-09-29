@@ -4,13 +4,7 @@ import random
 # --- Prediction Logic (Simulated Model) ---
 
 def predict_charge(data):
-    """
-    Simulated linear regression model for predicting insurance charges.
-    
-    This function uses the same core simulation logic as the original Flask app.
-    
-    Features used: age, sex, bmi, children, smoker, region.
-    """
+   
     try:
         # Get inputs
         age = data.get('age')
@@ -19,8 +13,6 @@ def predict_charge(data):
         sex = data.get('sex')
         smoker = data.get('smoker')
         region = data.get('region')
-
-        # --- Base Charge and Coefficients (Simulated) ---
         
         # Base annual cost (intercept)
         base_charge = 8000.0
@@ -119,7 +111,7 @@ def main():
     
     # Title and description
     st.markdown('<p class="title-gradient">Health Insurance Premium Predictor</p>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align: center; color: #555;">Estimate your annual health insurance premium charge.</p>', unsafe_allow_html=True)
+    #st.markdown('<p style="text-align: center; color: #555;">Estimate your annual health insurance premium charge.</p>', unsafe_allow_html=True)
     
     st.markdown("---")
 
@@ -192,3 +184,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
